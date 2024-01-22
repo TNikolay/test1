@@ -1,79 +1,43 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import Card from "../components/Card.astro"
+import Layout from '../layouts/Layout.astro'
+import { Project } from '../components/Project'
+import { projects } from '../data/projects'
 ---
 
-<Layout title="Welcome to Astro.">
-  <main>
-    <h1>Welcome to <span class="text-gradient">Astro</span></h1>
-    <p class="instructions">
-      To get started, open the directory <code>src/pages</code> in your project.<br />
-      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+<Layout title='Nikolay Tiushkov - Frontend developer from Sevastopol, CV'>
+  <main class='mx-auto mb-16 max-w-6xl text-base text-gray-900 lg:text-xl'>
+    <h1>Nikolay Tiushkov</h1>
+    <h2>Frontend developer from Sevastopol</h2>
+
+    <p class='mb-8'>
+      I commenced my web development studies at <a href='https://rs.school/' target='_blank'>RS School</a> in December 2022. I successfully completed the JS/FRONT-END courses (stages 0/1/2), mastered the REACT course, and currently, I am pursuing the NODE.JS course.
     </p>
-    <ul role="list" class="link-card-grid">
-      <Card href="https://docs.astro.build/" title="Documentation" body="Learn how Astro works and explore the official API docs." />
-      <Card href="https://astro.build/integrations/" title="Integrations" body="Supercharge your project with new frameworks and libraries." />
-      <Card href="https://astro.build/themes/" title="Themes" body="Explore a galaxy of community-built starter themes." />
-      <Card href="https://astro.build/chat/" title="Community" body="Come say hi to our amazing Discord community. ❤️" />
-    </ul>
+
+    <p class='mb-8'>
+      I have a few certificates:
+      <a href='https://app.rs.school/certificate/bhx9izkn' target='_blank'>Frontend</a>,
+      <a href='https://app.rs.school/certificate/vxv52eoa' target='_blank'>React</a>,
+      <a href='/assets/algorithms.pdf' target='_blank'>Algorithms</a>
+    </p>
+
+    <h2>Links</h2>
+    <div class='flex flex-col gap-4 justify-around p-4 m-auto my-4 bg-white rounded-md border-gray-200 shadow-md md:flex-row md:mx-4 md:p-8 hover:shadow-lg'>
+      <ul class='space-y-0.5'>
+        <li><strong>Work</strong>: <a href='http://softvoile.com/' target='_blank'>softvoile.com</a></li>
+        <li><strong>Private</strong>: <a href='http://begemotov.net/' target='_blank'>begemotov.net</a></li>
+        <li><strong>Playground</strong>: <a href='https://leetcode.com/TNikolay/' target='_blank'>leetcode.com</a></li>
+      </ul>
+      <ul class='space-y-0.5'>
+        <li><strong>Telegram</strong>: <a href='https://t.me/TNikolay80' target='_blank'>TNikolay80</a></li>
+        <li><strong>Github</strong>: <a href='https://github.com/TNikolay' target='_blank'>TNikolay</a></li>
+        <li><strong>Email</strong>: <a href='mailto:begemot@begemotov.net'>begemot@begemotov.net</a></li>
+      </ul>
+    </div>
+
+    <h2>Projects</h2>
+    {projects.map((project) => <Project data={project} />)}
+
+    <h2>In past life</h2>
+    <p class='mb-8'>In 2024, I completed my studies in computer science at the Kharkov Aviation Institute. Since then, I've ventured into various endeavors, primarily focusing on the development of desktop applications as an ISV. My expertise includes C++, MFC, Qt, wxWidgets, and more. Explore some of my products at <a href='http://softvoile.com/' target='_blank'>softvoile.com</a></p>
   </main>
 </Layout>
-
-<style>
-  main {
-    margin: auto;
-    padding: 1rem;
-    width: 800px;
-    max-width: calc(100% - 2rem);
-    color: white;
-    font-size: 20px;
-    line-height: 1.6;
-  }
-  .astro-a {
-    position: absolute;
-    top: -32px;
-    left: 50%;
-    transform: translatex(-50%);
-    width: 220px;
-    height: auto;
-    z-index: -1;
-  }
-  h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    margin-bottom: 1em;
-  }
-  .text-gradient {
-    background-image: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400%;
-    background-position: 0%;
-  }
-  .instructions {
-    margin-bottom: 2rem;
-    border: 1px solid rgba(var(--accent-light), 25%);
-    background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-    padding: 1.5rem;
-    border-radius: 8px;
-  }
-  .instructions code {
-    font-size: 0.8em;
-    font-weight: bold;
-    background: rgba(var(--accent-light), 12%);
-    color: rgb(var(--accent-light));
-    border-radius: 4px;
-    padding: 0.3em 0.4em;
-  }
-  .instructions strong {
-    color: rgb(var(--accent-light));
-  }
-  .link-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 2rem;
-    padding: 0;
-  }
-</style>
