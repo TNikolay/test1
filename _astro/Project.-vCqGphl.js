@@ -1,0 +1,9 @@
+import{r as d}from"./index.UCAuQZPX.js";import{h as x}from"./motion.F51XjfzO.js";var m={exports:{}},i={};/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var p=d,f=Symbol.for("react.element"),h=Symbol.for("react.fragment"),u=Object.prototype.hasOwnProperty,_=p.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,b={key:!0,ref:!0,__self:!0,__source:!0};function c(l,e,a){var r,o={},s=null,n=null;a!==void 0&&(s=""+a),e.key!==void 0&&(s=""+e.key),e.ref!==void 0&&(n=e.ref);for(r in e)u.call(e,r)&&!b.hasOwnProperty(r)&&(o[r]=e[r]);if(l&&l.defaultProps)for(r in e=l.defaultProps,e)o[r]===void 0&&(o[r]=e[r]);return{$$typeof:f,type:l,key:s,ref:n,props:o,_owner:_.current}}i.Fragment=h;i.jsx=c;i.jsxs=c;m.exports=i;var t=m.exports;function v({data:l}){const{name:e,description:a,image:r,stack:o,demo:s,src:n}=l;return t.jsxs(x.div,{className:"flex flex-col p-4 m-auto my-8 bg-white rounded-md border-gray-200 shadow-md sm:flex-row md:mx-4 hover:shadow-lg hover:bg-yellow-200",initial:{opacity:0,scale:.4},whileInView:{opacity:1,scale:1},transition:{duration:.5,delay:.2},children:[t.jsxs("div",{className:"flex-1 px-4 mb-6",children:[t.jsx("h3",{className:"mb-6 text-2xl font-bold text-center",children:e}),a&&t.jsx("p",{className:"mb-6",children:a}),(s||n)&&t.jsxs("p",{children:[s&&t.jsx("a",{href:s,className:"mr-4 font-bold text-blue-700",target:"_blank",children:"demo"}),n&&t.jsx("a",{href:n,className:"font-bold text-blue-700",target:"_blank",children:"source"})]}),o&&t.jsx("p",{className:"mt-6 text-sm italic font-bold",children:o.join(", ")})]}),r&&t.jsx("div",{className:"w-[260px] md:w-[320px] lg:w-[400px]",children:t.jsx("img",{src:`assets/projects/${r}`,alt:"{name}"})})]})}export{v as Project};
