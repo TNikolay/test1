@@ -34,7 +34,7 @@ export const fadeIn = (x: number, y: number, delay = 0, duration = 0.9, opacity 
       I have a few certificates:
       <a href='https://app.rs.school/certificate/bhx9izkn' target='_blank'>Frontend</a>,
       <a href='https://app.rs.school/certificate/vxv52eoa' target='_blank'>React</a>,
-      <a href='/assets/algorithms.pdf' target='_blank'>Algorithms</a>
+      <a href=`${import.meta.env.BASE_URL}/assets/algorithms.pdf` target='_blank'>Algorithms</a>
     </motion.p>
 
     <h2>Links</h2>
@@ -54,8 +54,7 @@ export const fadeIn = (x: number, y: number, delay = 0, duration = 0.9, opacity 
     <h2>Projects</h2>
     {projects.map((project) => <Project client:load data={project} />)}
 
-    <motion.div initial={false} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>dklfsnvldfhnv dsidfvsd</motion.div>
     <h2>In past life</h2>
-    <p class='mb-8'>In 2024, I completed my studies in computer science at the Kharkov Aviation Institute. Since then, I've ventured into various endeavors, primarily focusing on the development of desktop applications as an ISV. My expertise includes C++, MFC, Qt, wxWidgets, and more. Explore some of my products at <a href='http://softvoile.com/' target='_blank'>softvoile.com</a></p>
+    <p class='mb-8'>In 2004, I completed my studies in computer science at the Kharkov Aviation Institute. Since then, I've ventured into various endeavors, primarily focusing on the development of desktop applications as an ISV. My expertise includes C++, MFC, Qt, wxWidgets, and more. Explore some of my products at <a href='http://softvoile.com/' target='_blank'>softvoile.com</a></p>
   </main>
 </Layout>

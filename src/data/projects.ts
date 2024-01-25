@@ -3,7 +3,7 @@ import type { IProjectData } from '../components/Project'
 export const projects: IProjectData[] = [
   {
     name: 'Virtual Keyboard',
-    description: 'School task, implement virtual keyboard in vanila JS.',
+    description: 'Assignment from school: Create a virtual keyboard using plain JavaScript.',
     image: 'vkeyboard.webp',
     stack: ['JS'],
     demo: 'https://tnikolay.github.io/virtual-keyboard/',
@@ -11,21 +11,21 @@ export const projects: IProjectData[] = [
   },
   {
     name: 'Minesweeper',
-    description: 'School task, create clone of the popular game Minesweeper.',
+    description: 'Assignment from school: Develop a replica of the well-known game Minesweeper.',
     image: 'minesweeper.webp',
     stack: ['JS'],
     demo: 'https://rolling-scopes-school.github.io/tnikolay-JSFE2023Q1/minesweeper/',
   },
   {
     name: 'CSS Diner',
-    description: 'School task, create clone of CSS Diner game, https://flukeout.github.io/',
+    description: 'Assignment for school: Replicate the CSS Diner game, which can be found at https://flukeout.github.io/',
     image: 'cssdiner.webp',
     stack: ['TS', 'Vite', 'SCSS'],
     demo: 'https://rolling-scopes-school.github.io/tnikolay-JSFE2023Q1/rs-css/',
   },
   {
     name: 'ECommerce Application',
-    description: 'Final command task for frontend course. Demo does not work as intended because of the end of the trial period for commercetools.com',
+    description: 'The final project for the frontend course is not fully functional due to the trial period for commercetools.com coming to an end. It was developed by a team of three students.',
     image: 'ecommerce.webp',
     stack: ['React', 'RTK', 'TS', 'MUI', 'Commercetools'],
     //    demo: 'https://ikk-shop.netlify.app/',
@@ -33,7 +33,7 @@ export const projects: IProjectData[] = [
   },
   {
     name: 'Rick and Morty',
-    description: 'School task, create a site for search and display data from public API',
+    description: 'Assignment for school: develop a website to search for and showcase information from a public API.',
     image: 'rickandmonty.webp',
     stack: ['React', 'TS', 'RTK Query', 'Tailwind', 'Vitest'],
     demo: 'https://tnikolay.github.io/RSSReact2023Q4/',
@@ -41,7 +41,7 @@ export const projects: IProjectData[] = [
   },
   {
     name: 'GraphQL Application',
-    description: 'Final command task for React course.',
+    description: 'Final task for the React course. It was developed by a team of three students.',
     image: 'graphql.webp',
     stack: ['Next.js', 'RTK', 'TS', 'Chakra UI', 'Supabase', 'Vitest', 'GraphQL'],
     demo: 'https://previous-graphql.netlify.app/',
@@ -49,15 +49,15 @@ export const projects: IProjectData[] = [
   },
   {
     name: 'BrickShooter clone',
-    description: 'Pet project, clone of my favorite match-3 game :). Development in progress.',
+    description: 'Currently in development, I am working on a pet project which is a clone of my favorite match-3 game.',
     image: 'brickshooter.webp',
     stack: ['React', 'RTK', 'TS', 'Tailwind'],
     demo: 'http://brickshooterclone.begemotov.net/',
   },
   {
-    name: 'This CV',
+    name: 'This portfolio',
     image: '',
-    stack: ['Astro', 'React', 'TS', 'Tailwind'],
+    stack: ['Astro', 'React', 'TS', 'Tailwind', 'Framer Motion'],
     demo: '',
     src: '',
   },

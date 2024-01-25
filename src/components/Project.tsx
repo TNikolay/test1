@@ -16,11 +16,7 @@ interface IProps {
 export function Project({ data }: IProps) {
   const { name, description, image, stack, demo, src } = data
   return (
-    <motion.div className='flex flex-col p-4 m-auto my-8 bg-white rounded-md border-gray-200 shadow-md sm:flex-row md:mx-4 hover:shadow-lg hover:bg-yellow-200'
-    initial={{ opacity: 0, scale: 0.4 }}
-    whileInView={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.5, delay: 0.2 }}
-    >
+    <motion.div className='flex flex-col p-4 m-auto my-8 bg-white rounded-md border-gray-200 shadow-md sm:flex-row md:mx-4 hover:shadow-lg hover:bg-yellow-200' initial={{ opacity: 0, scale: 0.6 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.2 }}>
       <div className='flex-1 px-4 mb-6'>
         <h3 className='mb-6 text-2xl font-bold text-center'>{name}</h3>
         {description && <p className='mb-6'>{description}</p>}
@@ -42,8 +38,8 @@ export function Project({ data }: IProps) {
       </div>
 
       {image && (
-        <div className='w-[260px] md:w-[320px] lg:w-[400px]'>
-          <img src={`/assets/projects/${image}`} alt='{name}' />
+        <div className='w-[260px] md:w-[320px] lg:w-[400px] mx-auto'>
+          <img src={`${import.meta.env.BASE_URL}/assets/projects/${image}`} alt='{name}' />
         </div>
       )}
     </motion.div>
